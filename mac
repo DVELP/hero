@@ -214,9 +214,6 @@ if [ ! -d "$dotfiles_dir" ]; then
 fi
 env RCRC="$dotfiles_dir/rcrc" rcup
 
-fancy_echo "Reloading Tmux..."
-tmux source-file "$HOME/.tmux.conf"
-
 fancy_echo "Update heroku binary..."
 brew unlink heroku
 brew link --force heroku
